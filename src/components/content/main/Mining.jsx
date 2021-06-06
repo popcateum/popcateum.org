@@ -42,13 +42,15 @@ const useStyles = makeStyles((theme) => ({
 
 const command = {
   init: './gpop --syncmode "full" --http --http.port 9506 console',
-  coinbase: 'personel.newAccount("your password")',
+  coinbase: 'personal.newAccount("your_password")',
   start: 'miner.start(1)',
   minerG: './ethminer -G -P http://127.0.0.1:9506',
   minerU: './ethminer -U -P http://127.0.0.1:9506',
 }
 
 const ethminerLink = 'https://github.com/ethereum-mining/ethminer/releases/tag/v0.17.1'
+const explorerLink = "https://explorer.popcateum.org"
+
 
 const Mining = () => {
   const classes = useStyles()
@@ -87,6 +89,8 @@ const Mining = () => {
                 You can mine popcat using gpop! Popcateum rewards 50 popcat for
                 each block you create. Also, you can use GPU to mine by
                 connecting Ethminer and Gpop. Popcateum recommends using <Link target="_blank" href={ethminerLink}>Ethminer v0.17.1</Link>.
+                <br />
+                And You can check the blockchain <Link target="_blank" href={explorerLink}>Popcateum Explorer</Link>.
               </Typography>
               <Grid item>
                 <Typography className={classes.typoSub} variant="subtitle1">

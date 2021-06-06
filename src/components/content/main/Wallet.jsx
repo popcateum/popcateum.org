@@ -26,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
   typoContent: {
     margin: theme.spacing(3),
   },
+  typoContent2: {
+    marginTop: theme.spacing(3),
+    marginLeft: theme.spacing(3),
+    marginRight: theme.spacing(3),
+  },
   imgStyle: {
     width: '90%',
   },
@@ -80,7 +85,7 @@ const Wallet = () => {
                     className={classes.typoContent}
                     variant="subtitle1"
                   >
-                    1. Select a customized RPC from the network menu of the
+                    1. Select a Custom RPC from the network menu of the
                     Metamask and add the network as shown next to it.
                   </Typography>
                   <Typography

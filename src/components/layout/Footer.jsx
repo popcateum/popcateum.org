@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faTwitter,
   faFacebookF,
-  faRedditAlien,
   faDiscord,
   faInstagram,
+  faTelegram,
 } from '@fortawesome/free-brands-svg-icons'
 import { Grid } from '@material-ui/core'
 
@@ -44,6 +44,9 @@ const linkList = {
   instagram: 'https://www.instagram.com/popcateum/',
   reddit: 'https://www.reddit.com/r/popcateum/',
   discord: 'https://discord.gg/tPNHNvPZA4',
+  kakao: 'https://open.kakao.com/o/gfr57tgd',
+  telegram: 'https://t.me/popcateum',
+  notion: 'https://www.notion.so/Popcateum-f2a855933729447f99ff48912e0d9622'
 }
 
 const Footer = () => {
@@ -76,11 +79,25 @@ const Footer = () => {
               <FontAwesomeIcon icon={faInstagram} />
             </IconButton>
             <IconButton
-              aria-label="reddit"
+              aria-label="telegram"
               target="_blank"
-              href={linkList.reddit}
+              href={linkList.telegram}
             >
-              <FontAwesomeIcon icon={faRedditAlien} />
+              <FontAwesomeIcon icon={faTelegram} />
+            </IconButton>
+            <IconButton
+              aria-label="kakao"
+              target="_blank"
+              href={linkList.kakao}
+            >
+              <img width="23.5px" src="/images/kakao.svg" alt="kakao" />
+            </IconButton>
+            <IconButton
+              aria-label="notion"
+              target="_blank"
+              href={linkList.notion}
+            >
+              <img width="23.5px" src="/images/notion.svg" alt="notion" />
             </IconButton>
             <IconButton
               aria-label="discord"
