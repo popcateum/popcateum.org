@@ -42,13 +42,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
+const version = '1.1.0'
+
 const releaseLink = {
   windows:
-    'https://github.com/popcateum/go-popcateum/releases/download/v1.0.0/gpop-windows-amd64-1.0.0.zip',
+    `https://github.com/popcateum/go-popcateum/releases/download/v${version}/gpop-windows-amd64-${version}.zip`,
   macos:
-    'https://github.com/popcateum/go-popcateum/releases/download/v1.0.0/gpop-darwin-amd64-1.0.0.tar.gz',
+    `https://github.com/popcateum/go-popcateum/releases/download/v${version}/gpop-darwin-amd64-${version}.tar.gz`,
   linux:
-    'https://github.com/popcateum/go-popcateum/releases/download/v1.0.0/gpop-linux-amd64-1.0.0.tar.gz',
+    `https://github.com/popcateum/go-popcateum/releases/download/v${version}/gpop-linux-amd64-${version}.tar.gz`,
   github: 'https://github.com/popcateum/go-popcateum',
 }
 
@@ -76,7 +78,9 @@ const Gpop = () => {
                 Go, fully open source and licensed under the GNU LGPL v3.
               </Typography>
               <Typography className={classes.typoContent} variant="h6">
-                Gpop
+                Gpop 
+                <br />
+                v{version}
               </Typography>
               <img
                 className={classes.imgStyle}

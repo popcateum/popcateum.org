@@ -110,7 +110,7 @@ const Mining = () => {
                 <Typography className={classes.typoSub} variant="subtitle1">
                   4. In the directory where Ethminer is located, enter the
                   command below to connect it to GPU mining in Gpop. If your
-                  computer's GPU is a Radeon, please use the -G option and the
+                  computer GPU is a Radeon, please use the -G option and the
                   -U option if it's Endivia, please use the -U option. (For
                   Radeon GPUs, using too recent graphics card drivers may not be
                   able to mine.)

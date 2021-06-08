@@ -37,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const metamaskLink = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"
+const metaAppstore = "https://apps.apple.com/us/app/metamask-blockchain-wallet/id1438144202"
+const metaPlaystore = "https://play.google.com/store/apps/details?id=io.metamask"
 
 const Wallet = () => {
   const classes = useStyles()
@@ -59,6 +61,10 @@ const Wallet = () => {
                 Popcateum can send POP to others using Metamask and Gpop. Please
                 install the <Link target="_blank" href={metamaskLink}>Metamask</Link> which is Google Chrome
                 extension and do as below.
+                <br />
+                And You can install a Metamask app on your smartphone.
+                <br />
+                <Link target="_blank" href={metaAppstore}>App Store</Link> or <Link target="_blank" href={metaPlaystore}>Play Store</Link>
               </Typography>
               <Grid
                 container
@@ -100,8 +106,8 @@ const Wallet = () => {
                     Mac users.)
                     <br />
                     (You may not be able to bring your wallet normally due to
-                    the Metamask's own bug. In that case, please use Firefox's
-                    meta-mask)
+                    the Metamask own bug. In that case, please use Firefox
+                    Metamask)
                   </Typography>
                   <Typography
                     className={classes.typoContent}
