@@ -124,7 +124,7 @@ const EasterEgg = () => {
                     <TextField
                       className={classes.filedStyle2}
                       disabled
-                      label="Adress"
+                      label="Address"
                       rows={1}
                       variant="outlined"
                       value={address}

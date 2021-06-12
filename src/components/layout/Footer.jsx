@@ -45,7 +45,7 @@ const linkList = {
   reddit: 'https://www.reddit.com/r/popcateum/',
   discord: 'https://discord.gg/tPNHNvPZA4',
   kakao: 'https://open.kakao.com/o/gfr57tgd',
-  telegram: 'https://t.me/popcateum',
+  telegram: 'https://t.me/popcateumofficial',
   notion: 'https://www.notion.so/Popcateum-f2a855933729447f99ff48912e0d9622'
 }
 
