@@ -48,7 +48,7 @@ const command = {
   minerU: './ethminer -U -P http://127.0.0.1:9506',
 }
 
-const ethminerLink = 'https://github.com/ethereum-mining/ethminer/releases/tag/v0.17.1'
+const ethminerLink = 'https://github.com/ethereum-mining/ethminer/releases/tag/v0.18.0'
 const explorerLink = "https://explorer.popcateum.org"
 
 
@@ -88,7 +88,7 @@ const Mining = () => {
                 <br />
                 You can mine popcat using gpop! Popcateum rewards 50 popcat for
                 each block you create. Also, you can use GPU to mine by
-                connecting Ethminer and Gpop. Popcateum recommends using <Link target="_blank" href={ethminerLink}>Ethminer v0.17.1</Link>.
+                connecting Ethminer and Gpop. Popcateum recommends using <Link target="_blank" href={ethminerLink}>Ethminer v0.18.0</Link>.
                 <br />
                 And You can check the blockchain <Link target="_blank" href={explorerLink}>Popcateum Explorer</Link>.
               </Typography>
@@ -111,7 +111,7 @@ const Mining = () => {
                   4. In the directory where Ethminer is located, enter the
                   command below to connect it to GPU mining in Gpop. If your
                   computer GPU is a Radeon, please use the -G option and the
-                  -U option if it's Endivia, please use the -U option. (For
+                  -U option if it's Ndivia, please use the -U option. (For
                   Radeon GPUs, using too recent graphics card drivers may not be
                   able to mine.)
                 </Typography>
