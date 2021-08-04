@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     width: '90%',
   },
   filedStyle: {
-    width: '97%',
+    width: '95.6%',
     margin: theme.spacing(1),
     // marginBottom: theme.spacing(4),
   },
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   filedStyle2: {
-    width: '97%',
+    width: '95.6%',
     margin: theme.spacing(1),
   },
 }))

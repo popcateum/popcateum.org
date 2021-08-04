@@ -11,6 +11,7 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import brown from '@material-ui/core/colors/brown'
+import pkg from '../../../../package.json'
 
 const primary = brown[50]
 const mainColor = brown[800]
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const version = '1.1.1'
+const version = pkg.version
 
 const releaseLink = {
   windows:

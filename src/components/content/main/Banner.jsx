@@ -2,7 +2,11 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
 import brown from '@material-ui/core/colors/brown'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
 
 const primary = brown[50]
 const mainColor = brown[800]
@@ -21,10 +25,20 @@ const useStyles = makeStyles((theme) => ({
     color: mainColor,
   },
   typoContent: {
-    margin: theme.spacing(3),
+    margin: theme.spacing(2),
     color: mainColor,
   },
+  buttonstyle: {
+    marginRight: theme.spacing(1),
+    marginBottom: theme.spacing(3),
+  },
 }))
+
+const btnLink = {
+  forum: 'https://forum.popcateum.org',
+  twitter: 'https://twitter.com/popcateum',
+  telegram: 'https://t.me/popcateumofficial',
+}
 
 const Banner = () => {
   const classes = useStyles()
@@ -48,6 +62,54 @@ const Banner = () => {
             <br />
             popcat (POP) and thousands of decentralized applications.
           </Typography>
+          <Grid container direction="row" alignItems="center" justify="center">
+            <Button
+              variant="outlined"
+              className={classes.buttonstyle}
+              style={{
+                color: '#4e342e',
+                border: '1px solid #4e342e7f',
+                textTransform: 'none',
+                fontSize: '14px',
+              }}
+              href={btnLink.forum}
+              color="primary"
+              startIcon={<FontAwesomeIcon icon={faComments} />}
+              target="_blank"
+            >
+              <b>Forum</b>
+            </Button>
+            <Button
+              className={classes.buttonstyle}
+              style={{
+                backgroundColor: '#00a2ed',
+                textTransform: 'none',
+                fontSize: '14px',
+              }}
+              href={btnLink.twitter}
+              variant="contained"
+              color="primary"
+              startIcon={<FontAwesomeIcon icon={faTwitter} />}
+              target="_blank"
+            >
+              Twitter
+            </Button>
+            <Button
+              className={classes.buttonstyle}
+              style={{
+                backgroundColor: '#0088cc',
+                textTransform: 'none',
+                fontSize: '14px',
+              }}
+              href={btnLink.telegram}
+              variant="contained"
+              color="primary"
+              startIcon={<FontAwesomeIcon icon={faTelegramPlane} />}
+              target="_blank"
+            >
+              Telegram
+            </Button>
+          </Grid>
         </Grid>
       </div>
     </>
