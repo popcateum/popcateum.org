@@ -1,7 +1,7 @@
 {
   "homepage": "https://popcateum.org",
   "name": "popcateum-info",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.35",
