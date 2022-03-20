@@ -5,8 +5,8 @@ import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import brown from '@material-ui/core/colors/brown'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
-import { faComments } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faTelegramPlane, faDiscord } from '@fortawesome/free-brands-svg-icons'
+// import { faComments } from '@fortawesome/free-solid-svg-icons'
 
 const primary = brown[50]
 const mainColor = brown[800]
@@ -38,6 +38,7 @@ const btnLink = {
   forum: 'https://forum.popcateum.org',
   twitter: 'https://twitter.com/popcateum',
   telegram: 'https://t.me/popcateumofficial',
+  discord: 'https://discord.gg/SjWPG4FGta',
 }
 
 const Banner = () => {
@@ -57,13 +58,12 @@ const Banner = () => {
             <b>Popcateum Everywhere!</b>
           </Typography>
           <Typography className={classes.typoContent} variant="h6">
-            Popcateum is the community-run technology powering the
-            cryptocurrency,
+            Popcateum is the community-run technology powering the cryptocurrency,
             <br />
             popcat (POP) and thousands of decentralized applications.
           </Typography>
           <Grid container direction="row" alignItems="center" justify="center">
-            <Button
+            {/* <Button
               variant="outlined"
               className={classes.buttonstyle}
               style={{
@@ -78,6 +78,21 @@ const Banner = () => {
               target="_blank"
             >
               <b>Forum</b>
+            </Button> */}
+            <Button
+              className={classes.buttonstyle}
+              style={{
+                backgroundColor: '#5865F2',
+                textTransform: 'none',
+                fontSize: '14px',
+              }}
+              href={btnLink.discord}
+              variant="contained"
+              color="primary"
+              startIcon={<FontAwesomeIcon icon={faDiscord} />}
+              target="_blank"
+            >
+              Discord
             </Button>
             <Button
               className={classes.buttonstyle}
